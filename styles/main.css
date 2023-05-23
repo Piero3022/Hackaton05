@@ -379,6 +379,10 @@ footer {
     grid-area: p5;
 }
 
+footer {
+    width: 100%;
+}
+
 footer .ultimo .p1 {
     height: 100%;
     width: 50%;
