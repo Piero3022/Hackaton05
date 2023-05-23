@@ -257,7 +257,11 @@ main {
 
 .linea {
     grid-area: linea;
-    border-bottom: 0.1em solid black;
+    color: white;
+    width: 100%;
+    border-bottom: 0.5rem solid black;
+    height: 5rem;
+    background-color: white;
 }
 
 .allo {
@@ -473,6 +477,10 @@ footer .ultimo2 .content ul {
 @media (max-width: 700px) {
     /* Estilos para tablets */
     /* Agrega aquí tus estilos específicos para tablets */
+
+    html {
+        max-width: 70vh;
+    }
 
     * {
         box-sizing: border-box;
