@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    max-width: 200vh;
+
+}
+
+html {
+
+    font-size: 62.5%;
+    width: fit-content;
+
+}
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+}
+
+
+.nave {
+
+    box-sizing: border-box;
+    position: relative;
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+
+}
+
+.logonav {
+
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+
+
+
+}
+
+.logonav .logonavIMG {
+
+    position: absolute;
+    background-color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    z-index: 20;
+
+
+}
+
+.logonav p {
+
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 3.5rem;
+    margin-left: 3.5rem;
+    z-index: 30;
+    color: black;
+    border-radius: 3rem;
+    border: 2px solid #306099;
+    justify-content: center;
+
+}
+
+
+
+
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+
+}
+
+.naveUL {
+
+    height: 10rem;
+    width: 40rem;
+    background-color: white;
+    margin-right: 0;
+    display: flex;
+
+}
+
+.nave-son {
+
+    list-style-type: none;
+    background-color: white;
+    height: 4rem;
+    width: 11rem;
+    display: flex;
+
+}
+
+a {
+
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+.blog {
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    background-image: url(/images/banner.png);
+    height: 25rem;
+    z-index: 20;
+}
+
+.blog.banner {
+    z-index: 25;
+}
+
+.eclipses {
+
+    position: relative;
+    z-index: 30;
+
+}
+
+.eclipses1 {
+    position: relative;
+    z-index: 40;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+
+}
+
+input[type="text"]:focus {
+    border-color: #306099;
+    outline: none;
+}
+
+.input-with-icon {
+    position: relative;
+
+}
+
+.input-with-icon input {
+    padding-right: 30px;
+}
+
+.input-with-icon i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #306099;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+
+i.fa-arrow-left {
+    font-size: 16px;
+    color: #306099;
+}
+
+i.fa-arrow-right {
+    font-size: 16px;
+    color: #306099;
+
+}
+
+i.fa-share-alt {
+    font-size: 16px;
+    color: #306099;
+}
+
+i.fa-copy {
+    font-size: 16px;
+    color: #306099;
+
+}
+
+
+main {
+    position: relative;
+    width: 90%;
+
+}
+
+.busqueda {
+    grid-area: busqueda;
+    margin-top: 2rem;
+
+}
+
+
+.popular {
+    grid-area: popular;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.siete {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+.nueve {
+    grid-area: nueve;
+}
+
+.see {
+    grid-area: see;
+}
+
+.linea {
+    grid-area: linea;
+    border-bottom: 0.1em solid black;
+}
+
+.allo {
+    grid-area: allo;
+}
+
+.diez {
+    grid-area: diez;
+}
+
+.once {
+    grid-area: once;
+}
+
+.doce {
+    grid-area: doce;
+}
+
+.trece {
+    grid-area: trece;
+}
+
+.catorce {
+    grid-area: catorce;
+}
+
+.quince {
+    grid-area: quince;
+}
+
+.dieciseis {
+    grid-area: dieciseis;
+}
+
+.diecisiete {
+
+    grid-area: diecisiete;
+}
+
+.dieciocho {
+    grid-area: dieciocho;
+}
+
+.diecinueve {
+    grid-area: diecinueve;
+}
+
+.oldpost {
+
+    grid-area: oldpost;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+}
+
+.newpost {
+
+    grid-area: newpost;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+main .mainCuerpo {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-areas:
+        "busqueda busqueda busqueda"
+        "popular . ."
+        "dos dos tres"
+        "cuatro seis ocho"
+        "cinco siete nueve"
+        ". . see"
+        "linea linea linea"
+        "allo . ."
+        "diez diez once"
+        "doce doce trece"
+        "catorce catorce quince"
+        "dieciseis dieciseis diecisiete"
+        "dieciocho dieciocho diecinueve"
+        "oldpost . newpost";
+}
+
+.cuerpo p {
+
+    text-align: justify;
+}
+
+.cuerpo h4,
+h6 {
+
+    text-align: right;
+}
+
+.cuerpo h1 {
+    text-align: left;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+.p5 {
+    grid-area: p5;
+}
+
+footer .ultimo .p1 {
+    height: 100%;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    grid-area: p1;
+
+}
+
+footer .ultimo .p2 {
+    height: 100%;
+    display: flex;
+    grid-area: p2;
+    margin-left: 5rem;
+
+
+}
+
+footer .ultimo .p2 a {
+    height: 6rem;
+    width: 25rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    margin-right: 20rem;
+
+}
+
+
+
+footer .ultimo {
+    height: 30rem;
+    background-color: #306099;
+    border-top: 2rem solid white;
+    border-bottom: 0.09em solid white;
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-areas:
+        "p1 p2";
+}
+
+
+
+footer .ultimo2 {
+
+    height: 35rem;
+    background-color: #306099;
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-areas:
+        "p3 p4 p5";
+}
+
+footer .ultimo2 .parrafa {
+
+    position: absolute;
+    border-radius: 3rem;
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    color: lightblue;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    z-index: 20;
+}
+
+footer .ultimo2 .parraf {
+
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 0rem;
+    margin-left: 1.5rem;
+    z-index: 30;
+    color: black;
+    border-radius: 3rem;
+    background-color: white;
+    border: 2px solid white;
+
+}
+
+footer .ultimo2 .content {
+    position: relative;
+    margin-left: 5rem;
+    color: white;
+
+}
+
+footer .ultimo2 .content ul {
+    list-style: none;
+
+}
+
+@media (max-width: 700px) {
+    /* Estilos para tablets */
+    /* Agrega aquí tus estilos específicos para tablets */
+
+    * {
+        box-sizing: border-box;
+        margin: auto;
+        padding: 0;
+        max-width: 70vh;
+
+    }
+
+    main .mainCuerpo {
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-areas:
+            "busqueda "
+            "popular"
+            "dos"
+            "tres"
+            "cinco"
+            "cuatro"
+            "siete"
+            "seis"
+            "nueve"
+            "ocho"
+            "see"
+            "linea"
+            "allo"
+            "diez"
+            "once"
+            "doce"
+            "trece"
+            "catorce"
+            "quince"
+            "dieciseis"
+            "diecisiete"
+            "dieciocho"
+            "diecinueve"
+            "oldpost"
+            "newpost";
+    }
+
+
+    footer .ultimo {
+        height: 40rem;
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-areas:
+            "p1"
+            "p2";
+    }
+
+    footer .ultimo2 {
+        height: 90rem;
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-areas:
+            "p3"
+            "p4"
+            "p5";
+    }
+
+
+    footer .ultimo .p2 {
+
+        margin-left: 12rem;
+
+    }
+
+
+
+
+}
